@@ -1,0 +1,32 @@
+Database
+______________
+
+- used to stroe data
+- key:value pairs
+- both key and value should be string
+- large amount of data can be stored
+
+browser storage: to store data
+- limited amt of data can be stored only
+
+I) local storage
+- data will be stored permanently
+
+Operation is localStorage:
+----------------------------
+1) localStorage.setItem("key",value) - to add data to local storage
+2) localStorage.getItem("key) - to retrieve the data from localStorage 
+3) localStorage.removeItem() - 
+
+
+II) Session storage
+- not a permanent storage
+- remove when session expires
+
+(Check localstorage, ip address, port, octet, network_address, host_address,ipv4,ipv6)
+
+**VERY IMPORTANT**
+JSON.stringify() = convert object into string
+JSON.parse() = convert string into object
+Keep the "type" of button as "button" to stop refreshing
+window.location = "url" - to jump to particular page

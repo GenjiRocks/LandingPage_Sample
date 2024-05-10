@@ -73,6 +73,7 @@
                                     type="text"
                                     placeholder="Enter User ID"
                                     class="form-control rounded-3"
+                                    id="loguser"
                        
                                      />    
                                 </div>
@@ -83,11 +84,11 @@
                                     <input 
                                     type="password"
                                     placeholder="Enter Password"
-                                    name="password"
+                                    id="logpswd"
                                     class="form-control rounded-3"
                                      />
                                 </div>
-                                <button type="submit" class="btn btn-success w-100 rounded-3">
+                                <button onclick="obj.login()" type="button" class="btn btn-success w-100 rounded-3">
                                     Login
                                 </button>
                                 <span>Dont have account? Click here to <a href="./register.html">Register</a></span>
@@ -105,4 +106,5 @@
     
     
 </body>
+<script src="./logic.js"></script>
 </html>

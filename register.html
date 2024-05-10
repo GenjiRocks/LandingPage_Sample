@@ -69,7 +69,8 @@
                                     <label">
                                         <strong>User ID</strong>
                                     </label>
-                                    <input 
+                                    <input
+                                    id="reguser" 
                                     type="text"
                                     placeholder="Enter User ID"
                                     class="form-control rounded-3"
@@ -81,13 +82,14 @@
                                         <strong>Password</strong>
                                     </label>
                                     <input 
+                                    id="regpswd"
                                     type="password"
                                     placeholder="Enter Password"
-                                    name="password"
+                                  
                                     class="form-control rounded-3"
                                      />
                                 </div>
-                                <button type="submit" class="btn btn-success w-100 rounded-3">
+                                <button onclick="obj.register()" type="button" class="btn btn-success w-100 rounded-3">
                                     Register
                                 </button>
                                 <span>Already have an Account? Click here to <a href="./index.html">Login</a></span>
@@ -105,4 +107,5 @@
     
     
 </body>
+<script src="./logic.js"></script>
 </html>
