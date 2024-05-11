@@ -23,7 +23,50 @@ II) Session storage
 - not a permanent storage
 - remove when session expires
 
-(Check localstorage, ip address, port, octet, network_address, host_address,ipv4,ipv6)
+
+LocalStorage:
+-------------
+- data persists even after the user closes the browser
+- window object property
+- access to everyone(no sensitive information)
+- data saved in SQLite File
+
+Localhost:
+----------
+- computer talking to iteself
+- while accessing the domain a loopback is triggered. 
+- localhost is not just the virtual server but its also its domain name
+
+
+(The network address is used to identify the network and is common to all the devices attached to the network.
+ The host (or node) address is used to identify a particular device attached to the network. )
+
+IP address: (Internet Protocol address)
+-----------
+- A unique numerical identifier for every device or network that connects to the internet.
+- Ranges from 0.0.0.0 to 255.255.255.255. each 0 is called as an octet.
+
+IPV4:
+-----
+- ipv4 is 32bit vs 128bit
+- ipv4 bits are seperated by "." while ipv6 is by ":"
+- ipv4 is numeric vs ipv6 alphanumeric
+- ipv4 4.3billion address
+- ipv4 is octet vs ipv6 is hexadecimal 
+- ipv4 3 octets are network address and last digit is host address
+
+What is port?
+------------
+-  Ports are used to uniquely identify specific processes or services running on a computer or networked device.
+- They help differentiate between different types of network traffic and direct incoming data to the appropriate application or service.
+- identify specific services or applications running on the device
+
+network_address:
+-----------------
+- is an identifier for a node or host on a communication network
+-
+
+
 
 **VERY IMPORTANT**
 JSON.stringify() = convert object into string
