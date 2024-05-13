@@ -45,7 +45,7 @@ class Landing{
     login(){
         let user1 = loguser.value
         let pass1 = logpswd.value
-        if(user1 == '' && pass1 == ''){
+        if(user1 == '' || pass1 == ''){
             alert(`Please fill the form completely`)
         }
         else{
