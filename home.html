@@ -40,7 +40,7 @@
                   <a class="navbar-brand" href="#">
                     <i class="fa-solid fa-bars fa-2x mx-3 text-dark"></i>
                     <span class="fa-2x text-dark">DashBoard</span></a>
-                    <span class="text-dark fa-2x">  <i class="fa-solid fa-user text-dark me-2"></i> Log Out</span>
+                    <span onclick="logout()" class="text-dark fa-2x">  <i class="fa-solid fa-user text-dark me-2"></i> Log Out</span>
                    
                 </div>
               </nav>
@@ -63,7 +63,21 @@
 </body>
 <script>
     let user = localStorage.getItem("user")
-    username.innerHTML = user
+    // username.innerHTML = user
+
+    if(!user){
+        window.location = 'login.html'
+    }
+    else{
+        username.innerHTML = user
+    }
+
+
+
+    function logout(){
+        localStorage.removeItem("user")
+        window.location= "index.html"
+    }
 </script>
 
 </html> 
