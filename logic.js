@@ -43,9 +43,27 @@ class Landing{
     }
 
     login(){
-        let user = loguser.value
-        let pass = logpswd.value
-        console.log(user,pass)
+        let user1 = loguser.value
+        let pass1 = logpswd.value
+        if(user1 == '' && pass1 == ''){
+            alert(`Please fill the form completely`)
+        }
+        else{
+            if(user1 in this.database){
+                if(this.database[user1].password == pass1){
+                    localStorage.setItem("user",user1)
+                    window.location = "home.html"
+                }
+                else{
+                    alert("Invalid username or password")
+                }
+            }
+            else{
+                alert(`Account does not exsist`)
+            }
+        }
+     
+        
     }
 
 }

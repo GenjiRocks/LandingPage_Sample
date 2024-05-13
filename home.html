@@ -48,7 +48,7 @@
 
         <!-- Welcome -->
         <div class="container-fluid">
-            <h2 class="mt-5 mb-4 text-center">Welcome <span class="text-danger">User</span></h2>
+            <h2 class="mt-5 mb-4 text-center">Welcome <span class="text-danger" id="username">user</span></h2>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium totam quaerat nisi unde rerum suscipit blanditiis quidem a rem dicta, reprehenderit libero eveniet dolorum ab accusamus officia modi quo molestiae.
             Recusandae, at itaque? Harum vero, impedit quod quis itaque nulla tempora sunt accusamus eius temporibus sapiente, unde voluptas, sint eligendi. Dolore atque illum voluptas quia enim quam molestiae, perferendis necessitatibus.
             Adipisci, inventore? Modi fuga vitae similique iure vero deserunt, cumque a odio sequi facilis! Eius iusto quo amet deleniti nihil, minus, in blanditiis accusantium tenetur dolor obcaecati, nesciunt eveniet eos?</p>
@@ -61,5 +61,9 @@
     
     
 </body>
+<script>
+    let user = localStorage.getItem("user")
+    username.innerHTML = user
+</script>
 
 </html> 
