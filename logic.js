@@ -3,8 +3,10 @@ class Landing{
     database={
         Milan:{username:'Milan', password:'milan123'},
         Ashwin:{username:'Ashwin', password:'ashwin123'},
-        Bimal:{username:'Bimal', password:'bimal123'}
+        Bimal:{username:'Bimal', password:'bimal123'},
+        betty:{username:'betty',password:'betty123'}
     }
+
 
     // to store data to local strorage
     saveData(){
@@ -43,6 +45,7 @@ class Landing{
     }
 
     login(){
+        obj.getData()
         let user1 = loguser.value
         let pass1 = logpswd.value
         if(user1 == '' || pass1 == ''){
